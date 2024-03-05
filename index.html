@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Appru</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            overflow: hidden;
+        }
+        .center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .header{
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+        .nav{
+            height: 12vh;
+            padding: 0 85px;
+        }
+        .nav-list{
+            gap: 2%;
+            width: 100%;
+        }
+        .logo{
+            margin-right: auto;
+        }
+        .logo > a {
+            font-weight: bold;
+            font-size: 20px;
+            color: black;
+        }
+        a {
+            display: flex; 
+            align-items: center;
+            text-decoration: none;
+            color: rgb(228, 225, 225);
+            font-size: 17px;
+        }
+        i{
+            padding: 5px;
+        }
+        section{
+            position: absolute;
+            top: 0;
+            height: 100vh;
+            width: 100%;
+        }
+        .main-page{
+            padding: 12vh 120px;
+        }
+        .info{
+            width: 48%;
+            margin: 7% 0;
+        }
+        #text-bold{
+            line-height: 1.2;
+            color: rgb(202, 202, 202);
+            font-weight: bold;
+            font-size: 60px;
+            margin-bottom: 25px;
+        }
+        p{
+            color: rgb(134, 134, 134);
+        }
+        .buttons{
+            display: flex;
+        }
+        .button{
+            line-height: 1;
+            width:40%;
+            height: 80px;
+            background-color: black;
+            padding: 0px 5px;
+            margin: 25px 10px 0px 0px;
+            transition: background-color 1s;
+
+        }
+        .button:hover{
+            background-color: rgb(13, 152, 194);
+        }
+        .button > i {
+            margin-right: 10px;
+        }
+        .button > p {
+            color: white;
+        }
+        b {
+            font-size: 25px;
+        }
+        .back-design{
+            position: absolute;
+            top: -800px;
+            right: -150px;
+            width: 1500px;
+            height: 1000px;
+            background:linear-gradient(to right, #2124bd, #4ccae0);
+            border: 1px solid white;
+            border-radius: 20%;
+            transform: rotate(45deg);
+        }
+        .image{
+            position:relative;
+            bottom: 75vh;
+            left: 600px;
+        }
+        img{
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav center">
+            <ul class="nav-list center">
+                <li class="logo"><a href="#"><i class="fa-brands fa-joomla"></i>Appru</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Pricing</a></li></i>
+                <li><a href="#">Pages<i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="#">Blog<i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="main-page">
+                <div class="info">
+                    <p id="text-bold">App That <br> Suits You Better</p>
+                    <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards.</p>
+                    <div class="buttons">
+                        <a class="button center" href="#"><i class="fa fa-android" aria-hidden="true"></i><p><b>Available</b><br>on App Store</p></a>
+                        <a class="button center" href="#"><i class="fa fa-apple" aria-hidden="true"></i><p><b>Available</b><br>on Play Store</p></a>
+                    </div>
+                </div>
+                <div class="back-design"></div>
+                <div class="image">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/009/665/479/small/green-screen-notch-display-smartphone-clip-art-illustration-technology-free-png.png">
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://kit.fontawesome.com/c1944f1fb1.js" crossorigin="anonymous"></script>
+</body>
+</html>
